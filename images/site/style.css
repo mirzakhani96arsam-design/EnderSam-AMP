@@ -1,0 +1,465 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+    text-align: center;
+}
+
+/* منوی بالای سایت */
+nav {
+    background: #0f172a;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background: #6366f1;
+}
+
+/* هدر */
+header {
+    background: #1f2937;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+/* بخش بازی‌ها */
+main {
+    padding: 30px;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.game {
+    background: #1f2937;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.game h3 {
+    font-size: 25px;
+}
+
+button {
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #818cf8;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: #1f2937;
+}
+/* صفحه اختصاصی بازی */
+
+.game-page {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.game-page h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.game-info {
+    background: #1f2937;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.game-info h2 {
+    color: #818cf8;
+    margin-top: 25px;
+}
+
+.game-info p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.platforms {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.platforms span {
+    background: #111827;
+    padding: 12px 20px;
+    border-radius: 12px;
+}
+
+.game-info button {
+    margin-top: 20px;
+    font-size: 16px;
+}
+/* لوگوی صفحه بازی */
+
+.site-logo {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 25px;
+    border-radius: 25px;
+    background: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid #6366f1;
+}
+
+.site-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* تصویر اصلی بازی */
+
+.game-cover {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    margin: 0 auto 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #111827;
+}
+
+.cover-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    border: 2px dashed #6366f1;
+    box-sizing: border-box;
+}
+
+.cover-placeholder p {
+    font-size: 20px;
+    color: #a5b4fc;
+}
+/* کارت‌های اطلاعات بازی */
+
+.game-stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.stat {
+    background: #111827;
+    width: 180px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+}
+
+.stat span {
+    font-size: 30px;
+}
+
+.stat strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.stat p {
+    margin-bottom: 0;
+    color: #c7d2fe;
+}
+/* افکت حرفه‌ای کارت‌های اطلاعات */
+
+.stat {
+    cursor: default;
+    border: 1px solid transparent;
+}
+
+.stat:hover {
+    transform: translateY(-8px);
+    border-color: #6366f1;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.25);
+}
+
+.stat span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.stat strong {
+    color: white;
+}
+
+.stat p {
+    color: #a5b4fc;
+}
+/* دکمه اصلی بازی */
+
+.download-btn {
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 10px 0;
+    transition: 0.25s;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+/* نسخه موبایل */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    nav {
+        padding: 10px 5px;
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .games {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game {
+        width: 90%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+    .game-page {
+        padding: 25px 10px;
+    }
+
+    .game-page h1 {
+        font-size: 32px;
+    }
+
+    .game-cover {
+        height: 220px;
+    }
+
+    .game-info {
+        padding: 20px 15px;
+    }
+
+    .game-info p {
+        font-size: 16px;
+    }
+
+    .stat {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .download-btn {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+/* منوی موبایل */
+
+.menu-btn {
+    display: none;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    @media (max-width: 600px) {
+    .menu-btn {
+        display: block;
+    }
+}
+}
+
+/* فقط روی موبایل */
+@media (max-width: 600px) {
+
+    nav {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav a {
+        display: none;
+        width: 80%;
+        text-align: center;
+    }
+
+    nav.menu-open a {
+        display: block;
+    }
+}
+.menu-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: #6366f1;
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu-btn:hover {
+    transform: scale(1.08);
+    background: #818cf8;
+}
+.download-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #6366f1;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+/* ظاهر اختصاصی صفحه Roblox */
+    
+/* لوگوی سایت */
+
+.site-header {
+    background: #1f2937;
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom: 2px solid #6366f1;
+}
+
+.site-header img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.site-header img:hover {
+    transform: scale(1.08) rotate(2deg);
+}
+
+.site-header h1 {
+    margin: 5px 0;
+    font-size: 32px;
+}
+
+.site-header p {
+    margin: 5px 0 0;
+    color: #a5b4fc;
+    font-size: 17px;
+}
+.support-section {
+    background: #1f2937;
+    margin: 40px auto;
+    padding: 30px 20px;
+    max-width: 800px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.support-section h2 {
+    color: #818cf8;
+    font-size: 30px;
+}
+
+.support-section p {
+    color: #c7d2fe;
+    font-size: 17px;
+}
+
+.support-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 14px 25px;
+    background: #6366f1;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.support-btn:hover {
+    transform: translateY(-3px);
+    background: #818cf8;
+}
